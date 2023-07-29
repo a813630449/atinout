@@ -151,11 +151,6 @@ static bool is_final_result(const char * const response)
 			return true;
 		}
 		return false;
-	case '\r':
-		if (strcmp(&response[1], "\n") == 0) {
-			return true;
-		}
-		return false;
 	default:
 		return false;
 	}
