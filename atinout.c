@@ -125,29 +125,29 @@ static bool is_final_result(const char * const response)
 		}
 		return false;
 	case 'B':
-		if (strcmp(&response[1], "USY\r\n") == 0) {
+		if (strcmp(&response[1], "USY") == 0) {
 			return true;
 		}
 		return false;
 
 	case 'E':
-		if (strcmp(&response[1], "RROR\r\n") == 0) {
+		if (strcmp(&response[1], "RROR") == 0) {
 			return true;
 		}
 		return false;
 	case 'N':
-		if (strcmp(&response[1], "O ANSWER\r\n") == 0) {
+		if (strcmp(&response[1], "O ANSWER") == 0) {
 			return true;
 		}
-		if (strcmp(&response[1], "O CARRIER\r\n") == 0) {
+		if (strcmp(&response[1], "O CARRIER") == 0) {
 			return true;
 		}
-		if (strcmp(&response[1], "O DIALTONE\r\n") == 0) {
+		if (strcmp(&response[1], "O DIALTONE") == 0) {
 			return true;
 		}
 		return false;
 	case 'O':
-		if (strcmp(&response[1], "K\r\n") == 0) {
+		if (strcmp(&response[1], "K") == 0) {
 			return true;
 		}
 		return false;
