@@ -150,7 +150,6 @@ static bool is_final_result(const char * const response)
 		if (strcmp(&response[1], "K") == 0) {
 			return true;
 		}
-		return false;
 	default:
 		return false;
 	}
